@@ -4,15 +4,17 @@ import Question from './Question';
 import AnswerItem from './AnswerItem';
 
 class Answers extends React.Component {
+
     render() {
+        const children = this.props.data.map((answer) =>
+            <AnswerItem answer={answer} key={answer}/>
+        );
+        console.log('the item ',children);
         return (
         <div className="container-fluid">
             <Question name="cat"/>
             <div className="row">
-                <AnswerItem answer="cow"/>
-                <AnswerItem answer="cat"/>
-                <AnswerItem answer="dog"/>
-                <AnswerItem answer="pig"/>
+                {children}
             </div>
         </div>
         );
