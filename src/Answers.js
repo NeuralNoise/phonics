@@ -2,6 +2,7 @@ import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.css'
 import Question from './Question';
 import AnswerItem from './AnswerItem';
+import './styles/styles.css'
 
 class Answers extends React.Component {
 
@@ -9,9 +10,9 @@ class Answers extends React.Component {
         const children = this.props.data.map((answer) =>
             <AnswerItem answer={answer} key={answer}/>
         );
-        console.log('the item ',children);
         return (
-        <div className="container-fluid">
+        <div className="container">
+            <h4>Click on the picture that matches the word.</h4>
             <Question name="cat"/>
             <div className="row">
                 {children}

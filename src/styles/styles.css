@@ -1,0 +1,5 @@
+.img img:hover {
+    cursor: pointer;
+    border: 5px solid blue;
+    background-color: dimgrey ;
+}
