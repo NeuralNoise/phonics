@@ -13,7 +13,7 @@ class Image extends React.Component {
         e.preventDefault();
         let correct = e.currentTarget.alt === 'cat';
         if (correct)
-            swal("Great job!", "Correct Answer", "success");
+            swal("Awesome job!", "Correct Answer", "success");
         else
             swal({
                 title: "Error!",
