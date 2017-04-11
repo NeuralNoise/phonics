@@ -3,7 +3,7 @@ import Image from './Image';
 
 const AnswerItem = (props) => {
     return (
-    <div className="col-md-4 col-md-offset-1">
+    <div className="col-md-6 col-md-offset-2">
         <Image name={props.answer} />
     </div>
     );
