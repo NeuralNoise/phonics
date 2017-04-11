@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Welcome to Phonics App</h2>
+          <h1>Welcome to Phonics App</h1>
         </div>
           <Answers data={answerModel} />
       </div>
