@@ -12,7 +12,7 @@ class Answers extends React.Component {
         );
         return (
         <div className="container">
-            <h4>Click on the picture that matches the word.</h4>
+            <h2>Click on the picture that matches the word.</h2>
             <Question name="cat"/>
             <div className="row">
                 {children}
